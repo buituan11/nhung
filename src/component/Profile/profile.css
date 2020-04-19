@@ -39,13 +39,14 @@
 
 .profile-item{
 	background-color: #FAC9D1;
+	text-align: justify;
 	/*margin: 0px 10em;*/
 	padding-top: 1em;
-	padding-right: 5em;
-	padding-left: 3em;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 1em;
 	border-radius: 10px;
-	font-family: 'Handlee', cursive;
-	font-weight: 550;
+	font-family: 'Roboto', sans-serif;
 	position: relative;
 }
 .profile-item>p{
@@ -62,12 +63,12 @@
 	font-size: 1em;
 	text-align: left;
 }
-.profile-item>div{
+/* .profile-item>div{
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
 	background-color: #FFD699;
-}
+} */
 .profile-item>#stuff-a{ width: 125px; height: 50px; }
 .profile-item>#stuff-b{ width: 100px; height: 50px; }
 

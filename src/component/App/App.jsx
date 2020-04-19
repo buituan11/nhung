@@ -20,11 +20,11 @@ class App extends Component {
 		this.setState({render: val});
 	}
 	renderMenu = () => {
-		if (this.state.render === 0)
+		if (this.state.render === 2)
 			return (<Menu/>);
 		if (this.state.render === 1)
 			return (<Profile/>);
-		if (this.state.render === 2)
+		if (this.state.render === 0)
 			return (<Cake/>);
 	}
 	pushColor = (c) => {
@@ -43,7 +43,7 @@ class App extends Component {
 		}
 	}
 	warning = () =>{
-        alert("Học đeeeeeeeeeeeeee");
+        alert("Dễ hiểu mà :3");
     }
     renderRemind = () =>{
         return (
@@ -55,14 +55,13 @@ class App extends Component {
                   <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                       <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLongTitle">Remind</h5>
+                        <h5 className="modal-title" id="exampleModalLongTitle">Hint</h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">×</span>
                         </button>
                       </div>
                       <div className="modal-body">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis eni</p>
+                        <p>Trả lời đúng các câu hỏi để có thể nhận phần thưởng bonus nhaaa</p>
                       </div>
                       <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal" 
@@ -94,9 +93,9 @@ class App extends Component {
 		        <header>
 		      		{/*<img src="https://res.cloudinary.com/buituan/image/upload/v1568684378/Hpbd/a.jpg" alt=""/>*/}
 		      		<ul>
-			      		<li className="menu" id="active" onClick={(e)=> this.activeMenu(e,0)}>Menu</li>
-			      		<li className="menu" id="" onClick={(e)=> this.activeMenu(e,1)}>Profile</li>
-			      		<li className="menu" id="" onClick={(e)=> this.activeMenu(e,2)}>Cake</li>
+			      		<li className="menu" id="active" onClick={(e)=> this.activeMenu(e,0)}>Cake</li>
+			      		<li className="menu" id="" onClick={(e)=> this.activeMenu(e,1)}>Question</li>
+			      		<li className="menu" id="" onClick={(e)=> this.activeMenu(e,2)}>Memories</li>
 			      	</ul>
 		        </header>
 		        { this.renderMenu() }

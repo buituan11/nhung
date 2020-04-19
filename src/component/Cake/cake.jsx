@@ -47,7 +47,7 @@ class Cake extends Component {
         }
     }
     contactT = () => {
-        alert("Hỏi chú Tuấn :3");
+        alert("Dễ mà chơi thử đi :3");
     }
     renderHint = () =>{
         return(
@@ -66,21 +66,21 @@ class Cake extends Component {
                       </div>
                       <div className="modal-body">
                         <div className="hint">
-                            <p>Muốn mở quả thì phải làm bánh. Muốn làm bánh thì phải đi kiếm đồ</p>
-                            <p>Tìm trong Menu, Profile, Cake để lấy màu, lấy bánh, lấy nến :3</p>
+                            <p>Muốn mở quả thì phải làm bánh. Muốn làm bánh thì phải đi kiếm nguyên liệu</p>
+                            <p>Tìm trong Cake, Question, Memories để lấy màu, lấy bánh, lấy nến nha :3</p>
                             <p>Ví dụ như này</p>
                             <div className="example container-fluid">
                                 <div className="row">
                                     <div className="col-xl-12 col-12 row">
                                         <button className="col-xl-2 col-2 button-color-eg" style={{backgroundColor:"#672907"}} onClick={()=> this.pushColor("#672907")}></button>         
-                                        <p className="col-xl-10 col-10">Đây là màu socola. Bấm vào thì nó sẽ hiện màu ở Color</p>
+                                        <p className="col-xl-10 col-10">Đây là màu socola. Bấm vào thì nó sẽ hiện màu ở Color - Bấm thử đi nè :3</p>
                                     </div>
                                     <div className="col-xl-12 col-12 row">
                                         <div className="col-xl-3 col-3 stuff-eg"></div>
                                         <p className="col-xl-9 col-9">Đây là tầng bánh. Bấm vào thì nó sẽ hiện bánh ở Stuff</p>
                                     </div>
                                     <p className="col-xl-12 col-12">
-                                        Tìm màu, tìm nến, ... ở khắp nơiiii :>
+                                        Tìm nguyên liệu... ở khắp nơiiii :>
                                     </p>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ class Cake extends Component {
                             onClick={()=> this.contactT()}>
                                     Cancel
                         </button>
-                        <button type="button" className="btn btn-primary" data-dismiss="modal"><i className="fas fa-thumbs-up"/></button>
+                        <button type="button" className="btn btn-primary" data-dismiss="modal">Got it  <i className="fas fa-thumbs-up"/></button>
                       </div>
                     </div>
                   </div>
@@ -241,14 +241,14 @@ class Cake extends Component {
     renderOpen = () =>{
         let done = ["stuff-a", "#672907", "stuff-b", "yellow", [1,1,1]];
         let target = "#accept";
-        if (done.length !== this.state.cake.length ) {
-            target = "#deny";
-        }
-        for(var j = 0, length2 = done.length; j < length2-1; j++){
-            if (done[j] !== this.state.cake[j]){
-                target = "#deny";
-            }
-        }   
+        // if (done.length !== this.state.cake.length ) {
+        //     target = "#deny";
+        // }
+        // for(var j = 0, length2 = done.length; j < length2-1; j++){
+        //     if (done[j] !== this.state.cake[j]){
+        //         target = "#deny";
+        //     }
+        // }   
         return(
             <div className="col-xl-6 col-6">
                 <button type="button" className="btn btn-primary" data-toggle="modal" data-target={target}>
@@ -283,9 +283,15 @@ class Cake extends Component {
                           <span aria-hidden="true">×</span>
                         </button>
                       </div>
-                      <div className="modal-body">
-                            <p>Chúc mừng sinh nhật :></p>
-                            <img src="https://res.cloudinary.com/buituan/image/upload/v1571057270/Hpbd/bb.jpg" alt=""/>
+                      <div className="modal-body" style={{textAlign: "justify"}}>
+                            <p style={{fontWeight: 'bold', textAlign: "center"}}>Chúc mừng sinh nhật Thái Hà :></p>
+                            <img src="https://res.cloudinary.com/buituan/image/upload/v1587337883/Hpbd/IMG_4665.jpg" alt="" style={{height:'650px'}}/>
+                            <p>Chúc mừng Trần Thái Hài tuổi mới thật là thông minh, đã giải xong rồi nè. Nhưng vì Hà vốn đã thông minh rồi nên thử thách chưa dừng lại ở đó.</p>
+                            <p>Truy cập <a href="https://zoom.us/j/95441759517?pwd=aGN5VjFBSEhvRzhKRWtyZ3hwVjVmZz09" target="blank">link này</a> để tiếp tục nhé ^^</p>
+                            <p>Meeting ID: 954 4175 9517 <br/> Password: 031915</p>
+                            <p>Iu em,
+                            <br/>Những chú cá
+                            </p>
                       </div>
                       <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

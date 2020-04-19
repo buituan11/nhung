@@ -188,9 +188,9 @@
 	height: 50px;
 	border-radius: 50%;
 	color: brown;
-	-webkit-animation: question 0.8s both;
-	        animation: question 0.8s both;
-	animation-iteration-count: infinite;
+	/* -webkit-animation: question 1s both; */
+	        /* animation: question 1s both; */
+	/* animation-iteration-count: infinite; */
 	position: absolute;
 	left: 1em;
 	bottom: 6em;

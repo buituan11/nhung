@@ -47,7 +47,7 @@ class Cake extends Component {
         }
     }
     contactT = () => {
-        alert("Dễ mà chơi thử đi :3");
+        alert("Sử dụng phương án gọi điện thoại cho tổ tư vấn :3");
     }
     renderHint = () =>{
         return(
@@ -241,14 +241,14 @@ class Cake extends Component {
     renderOpen = () =>{
         let done = ["stuff-a", "#672907", "stuff-b", "yellow", [1,1,1]];
         let target = "#accept";
-        // if (done.length !== this.state.cake.length ) {
-        //     target = "#deny";
-        // }
-        // for(var j = 0, length2 = done.length; j < length2-1; j++){
-        //     if (done[j] !== this.state.cake[j]){
-        //         target = "#deny";
-        //     }
-        // }   
+        if (done.length !== this.state.cake.length ) {
+            target = "#deny";
+        }
+        for(var j = 0, length2 = done.length; j < length2-1; j++){
+            if (done[j] !== this.state.cake[j]){
+                target = "#deny";
+            }
+        }   
         return(
             <div className="col-xl-6 col-6">
                 <button type="button" className="btn btn-primary" data-toggle="modal" data-target={target}>

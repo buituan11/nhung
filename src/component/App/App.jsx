@@ -43,7 +43,7 @@ class App extends Component {
 		}
 	}
 	warning = () =>{
-        alert("Dễ hiểu mà :3");
+        alert("Sử dụng phương án gọi điện thoại cho tổ tư vấn :3");
     }
     renderRemind = () =>{
         return (

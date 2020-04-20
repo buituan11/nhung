@@ -77,7 +77,7 @@ class Profile extends Component {
 
     inputAns = (e) =>{
         // console.log(e.target.value);
-        if (e.target.value === "19992204"){
+        if (e.target.value === "19992004"){
             this.setState({ disable: true })
         }
     }
